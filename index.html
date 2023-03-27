@@ -6,83 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ensimmäinen kotitehtävä</title>
 </head>
+<body>
     <!-- Задание на субботу:
     1. В отдельной ветке на GitHub - homework/homework-1-html-intro,  
     2. Вывести на странице index.html все возможные заголовки, параграф (в котором есть слово выделенное жирным, курсивом и подчеркнутой), два вида списков, несколько видов различных полей ввода (текст, почта, пароль, дата, checkbox, радио-кнопка), добавить кнопку, при клике на которую появляется сообщение - "вы нажали на кнопку". 
     3. Таблицу 3x4 (столбцы/строки) - две первые ячейки по горизонтали объединены в одну. 
     4. Ниже выпадающий список из 5 элементов с залоговом. 
     5. Затем картинка и векторный рисунок SVG. -->
+    <header>Header</header>
 
-    <h1>Заголовок 1</h1>
-    <h2>Заголовок 2</h2>
-    <h3>Заголовок 3</h3>
-    <h4>Заголовок 4</h4>
+    <main>
+        <aside>Sidebar</aside>
+            <section>
+                <article>
+                    <h1>Заголовок 1</h1>
+                    <h2>Заголовок 2</h2>
+                    <h3>Заголовок 3</h3>
+                    <h4>Заголовок 4</h4>
+        
+                    <p>Вывести на странице index.html все возможные заголовки, параграф (в котором есть слово выделенное <b>жирным</b>, <i>курсивом</i> и <u>подчеркнутой</u>), два вида списков, несколько видов различных полей ввода (текст, почта, пароль, дата, checkbox, радио-кнопка), добавить кнопку, при клике на которую появляется сообщение - "вы нажали на кнопку". </p>
 
-    <p>Вывести на странице index.html все возможные заголовки, параграф (в котором есть слово выделенное <b>жирным</b>, <i>курсивом</i> и <u>подчеркнутой</u>), два вида списков, несколько видов различных полей ввода (текст, почта, пароль, дата, checkbox, радио-кнопка), добавить кнопку, при клике на которую появляется сообщение - "вы нажали на кнопку". </p>
-
-    <ul>
-        <li>Пункт списка</li>
-        <li>Пункт списка</li>
-        <li>Пункт списка</li>
-        <li>Пункт списка</li>
-    </ul>
-    <ol>
-        <li>Список</li>
-        <li>Список</li>
-        <li>Элемент списка</li>
-        <li>Все еще список</li>
-    </ol>
-
-    <p>Тут нужно ввести текст <input type="text"></p>
-    <p>Вот тут вот выбрать дату <input type="date"></p>
-    <p>E-mail: <input type="email" ></p>
-    <p>Password: <input type="password"></p>
-
-
-    <input type="checkbox"> Tämä on yksi checkbox<br>
-    <input type="checkbox"> Tämä on kaksi checkbox<br>
-    <input type="checkbox"> Tämä on kolme checkbox<br>
-    <br>
-    <input id="yksi" type="radio"> 
-    <label for="yksi">Можно отметить это</label><br>
-    <input id="kaksi" type="radio"> 
-    <label for="kaksi">Можно отметить это</label>
-    <br>
-    <table border="black">
-        <tr>
-            <td colspan="2">Tammikuu/Helmikuu</td>
-            <td>Maaliskuu</td>
-        </tr>
-        <tr>
-            <td>Huhtikuu</td>
-            <td>Toukokuu</td>
-            <td>Kesäkuu</td>
-        </tr>
-        <tr>
-            <td>Heinäkuu</td>
-            <td>Elokuu</td>
-            <td>Syyskuu</td>
-        </tr>
-        <tr>
-            <td>Lokakuu</td>
-            <td>Marraskuu</td>
-            <td>Joulukuu</td>
-        </tr>
-    </table>
+                    <ul>
+                        <li>Пункт списка</li>
+                        <li>Пункт списка</li>
+                        <li>Пункт списка</li>
+                        <li>Пункт списка</li>
+                    </ul>
+                    <ol>
+                        <li>Список</li>
+                        <li>Список</li>
+                        <li>Элемент списка</li>
+                        <li>Все еще список</li>
+                    </ol>
+                    <br>
+                        <p>Тут нужно ввести текст <input type="text"></p>
+                        <p>Вот тут вот выбрать дату <input type="date"></p>
+                        <p>E-mail: <input type="email" ></p>
+                        <p>Password: <input type="password"></p>
+                    
+                    <form>
+                        <input id="yksi" type="radio"> 
+                        <label for="yksi">Можно отметить это</label><br>
+                        <input id="kaksi" type="radio"> 
+                        <label for="kaksi">Можно отметить это</label><br>
+                        <input type="checkbox"> Tämä on yksi checkbox<br>
+                        <input type="checkbox"> Tämä on kaksi checkbox<br>
+                        <input type="checkbox"> Tämä on kolme checkbox<br>
+                    </form>
+                    <br>
+                    <table border="black">
+                        <tr>
+                            <td colspan="2">Tammikuu/Helmikuu</td>
+                            <td>Maaliskuu</td>
+                        </tr>
+                        <tr>
+                            <td>Huhtikuu</td>
+                            <td>Toukokuu</td>
+                            <td>Kesäkuu</td>
+                        </tr>
+                        <tr>
+                            <td>Heinäkuu</td>
+                            <td>Elokuu</td>
+                            <td>Syyskuu</td>
+                        </tr>
+                        <tr>
+                            <td>Lokakuu</td>
+                            <td>Marraskuu</td>
+                            <td>Joulukuu</td>
+                        </tr>
+                    </table>
     
-    <br>
-    <h3>Города Хельсинки</h3>
-    <select>
-        <option>Вантаа</option>
-        <option>Эспоо</option>
-        <option>Кауниайнен</option>
-        <option>Мог бы быть Лондон</option>
-        <option>Мог бы быть Ливерпуль</option>
-    </select>
+                    <br>
+                    <h3>Города Хельсинки</h3>
+                    <select>
+                        <option>Вантаа</option>
+                        <option>Эспоо</option>
+                        <option>Кауниайнен</option>
+                        <option>Мог бы быть Лондон</option>
+                        <option>Мог бы быть Ливерпуль</option>
+                    </select>
 
+                </article>
+            </section>
 
+    </main>
 
-
+    <footer>Footer</footer>
 
 </body>
 </html>
